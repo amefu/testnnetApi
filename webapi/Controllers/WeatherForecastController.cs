@@ -26,7 +26,7 @@ namespace WebApiRoutesResponses.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            throw new Exception("Exception test");
+            //throw new Exception("Exception test");
             var rng = new Random();
             _logger.LogError("GET WeatherForecast");
             var lst =  Enumerable.Range(1, 5).Select(index => new WeatherForecast
